@@ -51,20 +51,20 @@ This is a backend application built using Node.js, Express, and MongoDB. It incl
 
 ### Authentication
 
-* **POST** `<span>/api/auth/signup</span>` - Register a new user
-* **POST** `<span>/api/auth/login</span>` - Login and receive JWT token
-* **POST** `<span>/api/auth/logout</span>` - Logout user (remove token from frontend)
+* **POST** `/api/auth/signup` - Register a new user
+* **POST** `/api/auth/login` - Login and receive JWT token
+* **POST** `/api/auth/logout` - Logout user (remove token from frontend)
 
 ### User Management
 
-* **GET** `<span>/api/users</span>` - Get all users (Admin only)
-* **GET** `<span>/api/users/:id</span>` - Get a specific user
-* **PUT** `<span>/api/users/:id</span>` - Update user details
-* **DELETE** `<span>/api/users/:id</span>` - Delete a user
+* **GET** `/api/users` - Get all users (Admin only)
+* **GET** `/api/users/:id` - Get a specific user
+* **PUT** `/api/users/:id` - Update user details
+* **DELETE** `/api/users/:id` - Delete a user
 
 ## Middleware
 
-* `<span>authMiddleware.js</span>` - Protects routes using JWT authentication
+* `authMiddleware.js` - Protects routes using JWT authentication
 
 ## Logging Out (Frontend / Postman)
 
