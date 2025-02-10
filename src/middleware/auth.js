@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/user-model');
 
-let SECRET_KEY = process.env.SECRET_KEY;
-SECRET_KEY = 'somePrivateKey'
+const SECRET_KEY = process.env.SECRET_KEY;
+
 const auth = async (req, res, next) => {
     try {
         const token = req.header('Authorization')?.replace('Bearer ', '');

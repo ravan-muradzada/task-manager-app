@@ -64,8 +64,8 @@ userSchema.methods.toJSON = function() {
 }
 userSchema.methods.generateToken = function() {
     const user = this;
-    let privateKey = process.env.SECRET_KEY;
-    privateKey = 'somePrivateKey'
+    const privateKey = process.env.SECRET_KEY;
+
     const token = jwt.sign({_id: user._id.toString()}, privateKey, { expiresIn: '1d' });
 
     return token;
